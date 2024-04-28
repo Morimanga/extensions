@@ -23,6 +23,7 @@ abstract class ExtensionBase {
 
     abstract fun extensionInfo(): ExtensionInfo
 
+    abstract fun getGenres(): List<String>
     abstract suspend fun getLatestTitles(page: Int): TitleList
     abstract suspend fun getTitleInfo(id: String): Title
     abstract suspend fun getTitleChapter(chapterId: Int, titleId: String): List<String>
